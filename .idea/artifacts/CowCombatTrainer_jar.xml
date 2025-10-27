@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CowCombatTrainer:jar">
+    <output-path>$USER_HOME$/DreamBot/Scripts</output-path>
+    <root id="archive" name="CowCombatTrainer.jar">
+      <element id="module-output" name="CowCombatTrainer" />
+    </root>
+  </artifact>
+</component>
