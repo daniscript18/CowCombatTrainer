@@ -84,7 +84,8 @@ public class AreaManager {
 
     public void walkToCows() {
         if (Walking.shouldWalk()) {
-            Walking.walk(currentCowArea.getCenter());
+            if(currentCowArea == null) currentCowArea = getRandomCowArea();
+            Walking.walk(currentCowArea);
             Sleep.sleepUntil(() -> currentCowArea.contains(Players.getLocal()), 1500);
         }
     }
